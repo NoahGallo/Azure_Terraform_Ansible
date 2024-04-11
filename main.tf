@@ -27,7 +27,7 @@ module "linux_vm" {
     linux_vm_location = module.resource_group.location
     linux_vm_name = "terraformubuntuvm"
     linux_vm_size = "Standard_D2s_v3"
-    linux_vm_ssh_public_key_location = "C:/Users/gallon/.ssh/id_rsa.pub"
+    linux_vm_ssh_public_key_location = "/home/noah/.ssh/id_rsa.pub"
     public_ip_name = "terraformubuntuvmpublicip"
     network_interface_name = "terraformubuntuvmnic"
     linux_vm_subnet_id = module.subnet.subnet_id
